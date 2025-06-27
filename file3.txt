@@ -1,5 +1,132 @@
-python programming
-html
-css
 
-python pandas
+Function ek block of code hota hai jo specific kaam karta hai
+Jab humein woh kaam baar-baar karna ho, toh uske liye ek baar function likh ke use baar-baar call kar sakte hain
+
+syntax:
+
+def function_name():
+        block
+
+
+ 3. Function ko call kaise karte hain?
+
+function_name()
+
+
+4. Function with parameter (argument)
+
+def f1(name):
+    print("Hello", name)
+
+f1("Afsha")
+
+Parameter ek placeholder hota hai function ke andar, jisme function ke bahar se value bheji jaati hai.
+
+
+
+
+
+
+
+5. Function with return value
+
+def add(a, b):
+    return a + b
+
+result = add(5, 3)
+print(result)
+
+return ka matlab: 
+return ka use function ke andar se value wapas dene ke liye hota hai.
+Isse tum result ko store ya aage use kar sakte ho.
+
+Example:
+
+def square(num):
+    return num * num
+
+def double(value):
+    return value * 2
+
+result = square(4)       # return 16
+final_result = double(result)  # 16 * 2 = 32
+
+print("Final result:", final_result)
+
+
+types of arguments
+
+Positional Arguments
+Keyword Arguments	
+Default Arguments	
+*Variable-length (args)	
+**Variable-length (kwargs)	
+
+Positional Arguments
+*******sequence/order*********
+
+ 2. Keyword Arguments
+
+def greet(name, age):
+    print(f"Hello {name}, age is {age}")
+
+#greet(age=26, name="Afsha")
+
+greet('Afsha',age=26)
+#greet(age=26,'Afsha')#SyntaxError: positional argument follows keyword argument
+
+greet(name='Afsha',26)
+
+
+3. Default Arguments
+
+
+"""def f1(name):
+    print(name)
+f1()
+"""
+def f1(name='xyz',age=20):
+    print("name:",name,"age=",age)
+f1('AFSHA',26)
+
+
+def f1(name,age=20):
+    print("name:",name,"age=",age)
+f1('AFSHA',26)
+
+def f1(name='xyz',age):
+    print("name:",name,"age=",age)
+f1('AFSHA',26)
+
+#Variable-length Arguments – *args
+
+def f1(*n):
+    print(n)
+f1()
+f1(1)
+f1(1,2)
+
+"""
+def f1(*n,n1):
+    print("n=",n,"n1=",n1)
+f1(1,2)
+"""
+
+def f1(n1,*n):
+    print("n=",n,"n1=",n1)
+f1(1,2,3,4,5)
+
+
+
+
+#Variable-length Keyword Arguments – **kwargs
+
+def f1(n1,n2="None",**n):
+    print(n1,n,n1)
+f1(a=10,b=20,n1=10)
+
+
+
+
+
+	
